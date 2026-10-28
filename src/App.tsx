@@ -26,6 +26,7 @@ function App() {
           currentPage={currentpage}
           onRead={handleRead}
           onClose={handleClose}
+          /*author="Tom"*/
         />
       ) : (
         <button onClick={handleShow}>Show reading goal</button>
