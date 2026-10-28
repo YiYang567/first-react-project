@@ -9,10 +9,11 @@ function App() {
     setCurrentPage(Math.min(currentpage + 10, goal));
   };
   const handleClose = () => {
+    console.log("Reading goal dismissed");
     setVisible(false);
   };
 
-  const handleShow = () => {
+  const handleShow = (): void => {
     setVisible(true);
   };
 

@@ -1,6 +1,18 @@
-import { useState } from "react";
+type ReadingGoalProps = {
+  title: string;
+  goal: number;
+  currentPage: number;
+  onRead: () => void;
+  onClose: () => void;
+};
 
-function ReadingGoal({ title, goal, currentPage, onRead, onClose }) {
+function ReadingGoal({
+  title,
+  goal,
+  currentPage,
+  onRead,
+  onClose,
+}: ReadingGoalProps) {
   return (
     <div style={{ textAlign: "center" }}>
       <button onClick={onClose}>×</button>
